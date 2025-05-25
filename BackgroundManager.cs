@@ -1,17 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace kursach
-{
-    public static class BackgroundManager
+public static class BackgroundManager
     {
         private static readonly List<Image> _backgrounds = new List<Image>
         {
-            Properties.Resources.Background0,
-            Properties.Resources.Background1,
-            Properties.Resources.Background2,
-            Properties.Resources.Background3,
-            Properties.Resources.Background4
+            kursach.Properties.Resources.Background0,
+            kursach.Properties.Resources.Background1,
+            kursach.Properties.Resources.Background2,
+            kursach.Properties.Resources.Background3,
+            kursach.Properties.Resources.Background4
             // Добавляйте новые фоны здесь
         };
 
@@ -25,5 +23,5 @@ namespace kursach
         }
 
         public static List<Image> GetAllBackgrounds() => new List<Image>(_backgrounds);
-    }
+    
 }

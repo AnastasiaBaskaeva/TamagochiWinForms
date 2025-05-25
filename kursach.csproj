@@ -7,7 +7,7 @@
     <ProjectGuid>{D205F3B1-C091-4D46-881F-9607EA3C18EE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>kursach</RootNamespace>
-    <AssemblyName>kursach</AssemblyName>
+    <AssemblyName>Tamagochi</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -186,8 +186,9 @@
     <Content Include="Custom\room4.png" />
     <Content Include="Custom\room5.png" />
     <Content Include="custom_edited___tamagotchi_customs___lovelitchi_18_05d_icon.ico" />
-    <None Include="Resources\Background0.bmp" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

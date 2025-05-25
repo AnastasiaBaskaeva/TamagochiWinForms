@@ -15,7 +15,6 @@ namespace kursach
 
         }
 
-
         private void btnContinue_Click(object sender, EventArgs e)
         {
             Point menuLocation = this.Location;

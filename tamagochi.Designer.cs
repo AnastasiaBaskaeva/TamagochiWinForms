@@ -29,9 +29,9 @@ namespace kursach
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.progressHappiness = new kursach.PurpleProgressBar();
-            this.progressTired = new kursach.PurpleProgressBar();
-            this.progressHungry = new kursach.PurpleProgressBar();
+            this.progressHappiness = new PurpleProgressBar();
+            this.progressTired = new PurpleProgressBar();
+            this.progressHungry = new PurpleProgressBar();
             this.btn_WakeUp = new PurpleButton();
             this.btnPlay = new PurpleButton();
             this.btnSleep = new PurpleButton();

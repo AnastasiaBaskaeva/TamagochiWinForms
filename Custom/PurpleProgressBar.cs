@@ -3,9 +3,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace kursach
-{
-    public class PurpleProgressBar : ProgressBar
+public class PurpleProgressBar : ProgressBar
     {
         public PurpleProgressBar()
         {
@@ -52,5 +50,5 @@ namespace kursach
             using (var borderPen = new Pen(Color.FromArgb(100, 50, 150), 1))
                 e.Graphics.DrawRectangle(borderPen, 0, 0, rect.Width - 1, rect.Height - 1);
         }
-    }
+    
 }
