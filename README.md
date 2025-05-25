@@ -3,7 +3,7 @@
 Виртуальный питомец с уходом и мини-играми (Windows Desktop App)  
 
 ## 🎮 Демонстрация
-![Gameplay Demo](C:\Users\Admin\VisualStudioProjects\TamagochiWinForms\assets\tamagochi_preview.gif)  
+<img src='https://github.com/AnastasiaBaskaeva/TamagochiWinForms/blob/main/assets/tamagochi_preview.gif'>  
 *Уход за питомцем, смена фонов и мини-игры*
 
 ## 📦 Установка
