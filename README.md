@@ -4,7 +4,6 @@
 
 ## 🎮 Демонстрация
 <img src='https://github.com/AnastasiaBaskaeva/TamagochiWinForms/blob/main/assets/tamagochi_preview.gif' width='700' heigh='400'>  
-*Уход за питомцем, смена фонов и мини-игры*
 
 ## 📦 Установка
 1. **Скачайте** последнюю версию:  
