@@ -34,7 +34,6 @@ namespace kursach
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BackgroundSelectorForm));
             this.picPreview = new System.Windows.Forms.PictureBox();
-            this.imageListBackgrounds = new System.Windows.Forms.ImageList(this.components);
             this.panel = new System.Windows.Forms.TableLayoutPanel();
             this.btnApply = new PurpleButton();
             this.btnNext = new PurpleButton();
@@ -53,14 +52,6 @@ namespace kursach
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 0;
             this.picPreview.TabStop = false;
-            // 
-            // imageListBackgrounds
-            // 
-            this.imageListBackgrounds.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListBackgrounds.ImageStream")));
-            this.imageListBackgrounds.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListBackgrounds.Images.SetKeyName(0, "room0.png");
-            this.imageListBackgrounds.Images.SetKeyName(1, "room1.png");
-            this.imageListBackgrounds.Images.SetKeyName(2, "room2.png");
             // 
             // panel
             // 
@@ -143,7 +134,6 @@ namespace kursach
 
         #endregion
         private System.Windows.Forms.PictureBox picPreview;
-        private System.Windows.Forms.ImageList imageListBackgrounds;
         private PurpleButton btnNext;
         private PurpleButton btnPrev;
         private PurpleButton btnApply;

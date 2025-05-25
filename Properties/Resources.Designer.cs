@@ -63,16 +63,6 @@ namespace kursach.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Backdround4 {
-            get {
-                object obj = ResourceManager.GetObject("Backdround4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Background0 {
             get {
                 object obj = ResourceManager.GetObject("Background0", resourceCulture);
@@ -106,6 +96,16 @@ namespace kursach.Properties {
         internal static System.Drawing.Bitmap Background3 {
             get {
                 object obj = ResourceManager.GetObject("Background3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background4 {
+            get {
+                object obj = ResourceManager.GetObject("Background4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

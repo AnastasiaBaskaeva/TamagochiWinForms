@@ -171,26 +171,14 @@ namespace kursach
 
         private void LoadBackground()
         {
-            // Загружаем сохраненный фон
             int bgIndex = Properties.Settings.Default.Background;
-            var backgrounds = new List<Image>
-            {
-                Properties.Resources.Background0,
-                Properties.Resources.Background1,
-                Properties.Resources.Background2
-            };
+            this.BackgroundImage = BackgroundManager.GetBackground(bgIndex);
+            this.BackgroundImageLayout = ImageLayout.Stretch;
 
-            if (bgIndex >= 0 && bgIndex < backgrounds.Count)
+            foreach (Control control in this.Controls)
             {
-                this.BackgroundImage = backgrounds[bgIndex];
-                this.BackgroundImageLayout = ImageLayout.Stretch;
-
-                // Делаем Label'ы прозрачными для лучшей видимости
-                foreach (Control control in this.Controls)
-                {
-                    if (control is Label)
-                        control.BackColor = Color.Transparent;
-                }
+                if (control is Label)
+                    control.BackColor = Color.Transparent;
             }
         }
     }

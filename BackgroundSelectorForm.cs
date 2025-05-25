@@ -13,45 +13,31 @@ namespace kursach
     public partial class BackgroundSelectorForm : Form
     {
         private int _currentIndex = 0;
-        private readonly List<Image> _backgrounds;
 
-        public Image SelectedBackground => _backgrounds[_currentIndex];
+        public Image SelectedBackground => BackgroundManager.GetBackground(_currentIndex);
 
         public BackgroundSelectorForm()
         {
             InitializeComponent();
             this.ControlBox = false;
 
-            // Загрузка фонов
-            _backgrounds = new List<Image>
-        {
-            Properties.Resources.Background0,
-            Properties.Resources.Background1,
-            Properties.Resources.Background2
-        };
             _currentIndex = Properties.Settings.Default.Background;
             UpdatePreview();
 
-            // Обработчики событий
             btnPrev.Click += (s, e) => {
-                _currentIndex = (_currentIndex - 1 + _backgrounds.Count) % _backgrounds.Count;
+                _currentIndex = (_currentIndex - 1 + BackgroundManager.BackgroundsCount) % BackgroundManager.BackgroundsCount;
                 UpdatePreview();
             };
 
             btnNext.Click += (s, e) => {
-                _currentIndex = (_currentIndex + 1) % _backgrounds.Count;
+                _currentIndex = (_currentIndex + 1) % BackgroundManager.BackgroundsCount;
                 UpdatePreview();
-            };
-
-            btnApply.Click += (s, e) => {
-                this.DialogResult = DialogResult.OK;
-                this.Close();
             };
         }
 
         private void UpdatePreview()
         {
-            picPreview.Image = _backgrounds[_currentIndex];
+            picPreview.Image = SelectedBackground;
         }
 
         private void btnApply_Click(object sender, EventArgs e)
