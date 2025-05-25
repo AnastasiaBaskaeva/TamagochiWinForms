@@ -117,32 +117,62 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Backdround4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\room5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\room0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\room2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\room3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backgroundIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\backgroundIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BackgroundSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\BackgroundSound.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonClick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\buttonClick.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MainMenuBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Custom\MainMenuBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="imageListBackgrounds.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="imageListBackgrounds.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAg
+        CwAAAk1TRnQBSQFMAgEBAwEAAUgBAAFIAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wEAAbYBFgG2ARYBiAGx
+        AY4BFwKxAY4BFwKOAbYBrgIVAWYBiwGuAYsCrQGLAc8BrgHPAa4CFQFmA94B/wHzB94B3QLeAdcQAAEW
+        AbYCFgG2AY4BsQG2AbEBjgEXAo4BiAGuAYwBFQHtAY0BiwESAq0FiwEVAewB7QFmC94DCAHeAbYQAAG2
+        ARYCtgEWBLYBsQFvAY4BrgESAa4BtwGNAW4B7AKNAa4DzwGuAc8BtQKNAW4BjQXeAd0B3gHdBN4BCALd
+        Ad4QAAHSArYBsAH3Ae0BtgG1AbYB7QG2AW4CjQG2AdIBEgJuAZMCrgSLAa4B6gGTAW4B6wHqBN4D3QHe
+        AQkE3gEIAd0B3hAAAtIBFgGNAdYB1QK1Aa4B6wG7Aa8BtQGOAtIBFQHtAZMBbgGNAW0BrQGLAa4BiwG1
+        Ae0B7AGOAe0BFQTeAt0B3gEJAt4B3QPeAQgBCRAAA9IBsAHWAbsE0gH3AboBtQGOAtIBFQFuAUwBSgHq
+        Aq4BzwGuAc8B7AFuAZMBbwFoARIE3gHdAt4BtgLdAdcB8QPeAd0QAAPSAbABCQEHAbYDsAG7AboBCQG3
+        AtIBRAFuAUsBSgG0ARIC7QGuAewBbQOTAW4B6gXeAQkBtgPXAbYE3gHdEAAD0gGwAbwB3QEZAfMB8QHd
+        AbQBugHvAbYC0gFuAZIB9wGTAe0BrwKTAe0B7wGSAbUBHAG2AZMBkgPdAd4BCQHXAQkC1wHRAdcD8QHe
+        Ad0QAAK3AdIBtgK8AfAB8QHzAd0BtAG6Ae8BtgG3AdIB7QJuAe0BkwGuAu0BrgFtAeoBtAH3Ae0BtgG9
+        Ad0C3gG2AtcBtgHXAdEBtQHXAgkD3hAAArcB0gGwAbwD3QEIAd0BtAG6AdcBtgK3ArYBvQK2Aa8BtQG2
+        Aa8BtgGvAbYB9wGTAd0BkgHdAd4BtgPXAdECtQPXAdYB1wG9Ad4QAAO3AbAB3QG2Ad0B1wG2AdcBtAG6
+        AbABtgK3Ad0CtgEHAbYC3gEJAd0B3gHdA7YBkwEHAfAB3gHdAQkB3QHXArYBCQLXAtYD1xAAA7cBsAHW
+        A7YC1wEJAboBtgO3AZIB9wHdAbYC3QHeAQkD3gLdAbYB9wG2At4E3QEJAd0BtgPWBNcQAAO3AbACtgTW
+        ArUBsAO3AY0BtgLdArYB1wEJArYB1wHdArYD3QHeAt0E1wTWBNcQAAW3ArYB1gHwAdcDtwG2ArcB6gHd
+        AbUBCQHsAesB7QHsAZEB6wH3AewDtgGuAfABvQHeAd0C1wXWBdcQAAG3AbYBtwG8ArcB1wG1AdcBtgG3
+        AQcDtwHSAbYB3QHsAbMBFQERAQ8CQwEVAboBQwG0AZMBBwEcAQkB3QG9AfABtQTWB9cQAAG3AdcEtwHX
+        AdYCtgO3AbYB1wG1AfcB7QG2AbsCQwFmAkMBEwG0AWYBswHsAW4B7QHXAbUC1wfWBdcQAAFCAU0BPgcA
+        AT4DAAEoAwABQAMAARADAAEBAQABAQUAAYAXAAP/gQAL
+</value>
   </data>
 </root>

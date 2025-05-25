@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 public class PurpleButton : Button
 {
-    private readonly Color normalColor = Color.Transparent;
+    private readonly Color normalColor = Color.FromArgb(221, 160, 221);
     private readonly Color hoverColor = Color.FromArgb(255, 200, 220);
     private readonly Color textColor = Color.FromArgb(128, 0, 128);
     private readonly Color borderColor = Color.FromArgb(150, 100, 200);
@@ -25,23 +25,7 @@ public class PurpleButton : Button
         this.MouseEnter += (s, e) => this.BackColor = hoverColor;
         this.MouseLeave += (s, e) => this.BackColor = normalColor;
 
-        // Для кнопки "В меню" можно добавить особые настройки
-        if (this.Text == "←")
-        {
-            this.FlatAppearance.BorderSize = 2;
-            this.Font = new Font("Wingdings", 12, FontStyle.Bold);
-        }
+        this.Click += (s, e) => SoundManager.PlayButtonClick();
     }
 
-    protected override void OnPaint(PaintEventArgs pevent)
-    {
-        base.OnPaint(pevent);
-
-        // Дополнительная отрисовка (если нужна)
-        if (this.Focused && this.ShowFocusCues)
-        {
-            var rect = new Rectangle(1, 1, this.Width - 3, this.Height - 3);
-            ControlPaint.DrawFocusRectangle(pevent.Graphics, rect);
-        }
-    }
 }

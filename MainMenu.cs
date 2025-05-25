@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace kursach
@@ -20,7 +14,6 @@ namespace kursach
             btnContinue.Enabled = Properties.Settings.Default.Life; // проверка сохранений
 
         }
-
 
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -64,8 +57,12 @@ namespace kursach
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            SoundManager.Dispose();
         }
 
-
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            SoundManager.Initialize();
+        }
     }
 }

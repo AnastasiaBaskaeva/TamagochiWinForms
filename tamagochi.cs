@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace kursach
@@ -124,6 +126,8 @@ namespace kursach
             else if (!Properties.Settings.Default.Life)
                 pictureBox.Image = imageList1.Images[9];
             else pictureBox.Image = imageList1.Images[0];
+            LoadBackground();
+            SoundManager.Initialize();
         }
 
         private void tamagochi_FormClosing(object sender, FormClosingEventArgs e)
@@ -137,11 +141,57 @@ namespace kursach
 
             // Обязательно вызываем Save()
             Properties.Settings.Default.Save();
+            SoundManager.Dispose();
         }
 
         private void btnToMenu_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSelectBackground_Click(object sender, EventArgs e)
+        {
+            using (var selector = new BackgroundSelectorForm())
+            {
+                if (selector.ShowDialog() == DialogResult.OK)
+                {
+                    this.BackgroundImage = selector.SelectedBackground;
+                    this.BackgroundImageLayout = ImageLayout.Stretch;
+                    LoadBackground();
+
+                    // Для лучшей видимости элементов
+                    foreach (Control control in this.Controls)
+                    {
+                        if (control is Label)
+                            control.BackColor = Color.Transparent;
+                    }
+                }
+            }
+        }
+
+        private void LoadBackground()
+        {
+            // Загружаем сохраненный фон
+            int bgIndex = Properties.Settings.Default.Background;
+            var backgrounds = new List<Image>
+            {
+                Properties.Resources.Background0,
+                Properties.Resources.Background1,
+                Properties.Resources.Background2
+            };
+
+            if (bgIndex >= 0 && bgIndex < backgrounds.Count)
+            {
+                this.BackgroundImage = backgrounds[bgIndex];
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+
+                // Делаем Label'ы прозрачными для лучшей видимости
+                foreach (Control control in this.Controls)
+                {
+                    if (control is Label)
+                        control.BackColor = Color.Transparent;
+                }
+            }
         }
     }
 }
