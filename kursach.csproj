@@ -101,7 +101,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackgroundManager.cs" />
+    <Compile Include="Custom\BackgroundManager.cs" />
     <Compile Include="BackgroundSelectorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,7 +114,7 @@
     <Compile Include="Custom\PurpleProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SoundManager.cs" />
+    <Compile Include="Custom\SoundManager.cs" />
     <Compile Include="tamagochi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +176,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\tamagochi_preview.gif" />
     <Content Include="Custom\backgroundIcon.png" />
     <Content Include="Custom\BackgroundSound.mp3" />
     <Content Include="Custom\buttonClick.wav" />

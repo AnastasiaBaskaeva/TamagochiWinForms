@@ -10,7 +10,6 @@ public static class BackgroundManager
             kursach.Properties.Resources.Background2,
             kursach.Properties.Resources.Background3,
             kursach.Properties.Resources.Background4
-            // Добавляйте новые фоны здесь
         };
 
         public static int BackgroundsCount => _backgrounds.Count;

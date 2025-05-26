@@ -7,9 +7,7 @@ namespace kursach
     public partial class BackgroundSelectorForm : Form
     {
         private int _currentIndex = 0;
-
         public Image SelectedBackground => BackgroundManager.GetBackground(_currentIndex);
-
         public BackgroundSelectorForm()
         {
             InitializeComponent();
@@ -29,15 +27,12 @@ namespace kursach
             };
         }
 
-        private void UpdatePreview()
-        {
-            picPreview.Image = SelectedBackground;
-        }
-
+        private void UpdatePreview() => picPreview.Image = SelectedBackground;
+        
         private void btnApply_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Background = _currentIndex;
-            Properties.Settings.Default.Save(); //не забываем сохранять!
+            Properties.Settings.Default.Save();
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
